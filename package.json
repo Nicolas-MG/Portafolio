@@ -1,0 +1,18 @@
+{
+  "name": "portafolio-nico",
+  "version": "1.0.0",
+  "description": "Mi portafolio 2025",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nicolas-MG"
+  },
+  "author": "Nicolas",
+  "license": "ISC",
+  "dependencies": {
+    "eins-modal": "^2.2.2"
+  }
+}
