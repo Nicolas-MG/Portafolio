@@ -4,51 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio- Nicolas </title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/node_modules/eins-modal/dist/css/eins-modal.min.css">
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#briefcase">Portafolio</a></li>
+                    <li><a href="#about-me">Sobre mi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
         <div class="hero">
         <div class="container">
-            <div class="navbar">
-                <nav>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Portafolio</a></li>
-                        <li><a href="#">Sobre mi</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <img src="./img/fondo.jpg" alt="#">
+            <img src="./img/progra.jpg" alt="#">
         </div>
         </div>
         <div class="profile">
             <div class="squere"></div>
             <div class="circle-trans"></div>
             <div class="circle"></div>
-            <div class="profile-img"><img src="./img/Foto_mia.jpg" alt=""></div>
+            <div class="profile-img"><img src="./img/start.png" alt=""></div>
             <div class="square-text">Nicolas Marin G.</div>
             <div class="square-text-2"><span>WEB DEVELOPER </span></div>
             <div class="contact-icon">
-                <a href="https://www.linkedin.com/in/nicolas-marin-83250a24a/"><img src="./img/linkedin.jpg" alt="#"></a>
-                <a href="https://www.linkedin.com/in/nicolas-marin-83250a24a/"><img src="./img/linkedin.jpg" alt="#"></a>
+                <a href="https://www.linkedin.com/in/nicolas-marin-83250a24a/" target="_blank" ><img src="./img/linkedin.png" alt="#"></a>
+                <a href="https://github.com/Nicolas-MG" target="_blank" ><img src="./img/github-icon.png" alt="#"></a>
             </div>
             <div class="square-text-3"><a href="#about-me"><span>About me | </span>sobre Mi</span></a></div>
         </div> 
-    </header>
+    </section>
     
     <section class="briefcase" id="briefcase">
         <div class="briefcase-section container">
             <h2><span>briefcase |</span> Portafolio</h2>
             <div class="briefcase-grid">
-                <div><a data-modal-id="myModal"><img src="./img/123.jpeg" alt="#"></a></div>
-                <div><a data-modal-id="myModal"><img src="./img/Yo.png" alt="#"></a></div>
-                <div><a data-modal-id="myModal"><img src="./img/Foto_mia.jpg" alt="#"></a></div>
+                <div><a data-modal-id="myModal-1"><img src="./img/23.jpg" alt="#"></a></div>
+                <div><a data-modal-id="myModal-2"><img src="./img/22.jpg" alt="#"></a></div>
+                <div><a data-modal-id="myModal-3"><img src="./img/sa.jpeg" alt="#"></a></div>
             </div>
         </div>
     </section>
@@ -59,16 +60,20 @@
                 <h2><span>knowledge |</span> Conocimentos</h2>
                 <div class="knowledge">
                     <div>
-                        <img src="" alt="HTML">
+                        <img src="./img/html-icon.png" alt="HTML">
                         <h3>HTML</h3>
                     </div>
                     <div>
-                        <img src="" alt="CSS">
+                        <img src="./img/css-icon.png" alt="CSS">
                         <h3>CSS</h3>
                     </div>
                     <div>
-                        <img src="" alt="JavaScript">
+                        <img src="./img/js-icon.png" alt="JavaScript">
                         <h3>JavaScript</h3>
+                    </div>
+                    <div>
+                        <img src="./img/npm-icon.png" alt="npn">
+                        <h3>npm</h3>
                     </div>
                 </div>
             </div>
@@ -79,23 +84,27 @@
                 <h2><span>Dev Tools |</span> Herramientas</h2>
                 <div class="tools">
                     <div>
-                        <img src="" alt="HTML">
-                        <h3>HTML</h3>
+                        <img src="./img/Angular.png" alt="Angular">
+                        <h3>Angular</h3>
                     </div>
                     <div>
-                        <img src="" alt="CSS">
-                        <h3>CSS</h3>
+                        <img src="./img/react.png" alt="React">
+                        <h3>React</h3>
                     </div>
                     <div>
-                        <img src="" alt="JavaScript">
-                        <h3>JavaScript</h3>
+                        <img src="./img/Vue.png" alt="Vue">
+                        <h3>Vue</h3>
+                    </div>
+                    <div>
+                        <img src="./img/git-icon.png" alt="git">
+                        <h3>Git</h3>
                     </div>
                 </div>
             </div>
 
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about-me">
         <div class="about-flex container">
             <div class="about-info">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -123,11 +132,75 @@
         </div>
     </footer>
 <!-- Modal  section-->
- <div id="myModal" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+ <div id="myModal-1" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
     <div class="eins-modal-content">
         <div class="eins-modal-close"></div>
-        Ejemplo de prueba
-        <button class="eins-modal-close-bottom">OK</button>
+        <div class="pw-content">
+            <div class="eins-modal-preview">
+                <img src="./img/123.jpeg" alt=""></div>
+             <div class="eins-modal-text">
+                <p>Poner la informacion</p>
+                <div class="eins-modal-text-2">
+                    <span>ENLACE:<a href=""></a></span>
+                </div>
+                <div class="eins-modal-text-3">
+                    <span>Tecnologias usadas</span>
+                    <div class="eins-modal-tec">
+                        <span>hola</span><img src="" alt="">
+                        <span>hola</span><img src="" alt="">
+                        <span>hola</span><img src="" alt="">
+                    </div>
+                </div>
+             </div>   
+        </div>
+    </div>
+</div>
+
+<div id="myModal-2" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="pw-content">
+            <div class="eins-modal-preview">
+                <img src="./img/Yo.png" alt=""></div>
+             <div class="eins-modal-text">
+                <p>Poner la informacion</p>
+                <div class="eins-modal-text-2">
+                    <span>ENLACE:<a href=""></a></span>
+                </div>
+                <div class="eins-modal-text-3">
+                    <span>Tecnologias usadas</span>
+                    <div class="eins-modal-tec">
+                        <span>hola</span><img src="" alt="">
+                        <span>hola</span><img src="" alt="">
+                        <span>hola</span><img src="" alt="">
+                    </div>
+                </div>
+             </div>   
+        </div>
+    </div>
+</div>
+
+<div id="myModal-3" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+    <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="pw-content">
+            <div class="eins-modal-preview">
+                <img src="./img/Foto_mia.jpg" alt=""></div>
+             <div class="eins-modal-text">
+                <p>Poner la informacion</p>
+                <div class="eins-modal-text-2">
+                    <span>ENLACE:<a href=""></a></span>
+                </div>
+                <div class="eins-modal-text-3">
+                    <span>Tecnologias usadas</span>
+                    <div class="eins-modal-tec">
+                        <span>hola</span><img src="" alt="">
+                        <span>hola</span><img src="" alt="">
+                        <span>hola</span><img src="" alt="">
+                    </div>
+                </div>
+             </div>   
+        </div>
     </div>
 </div>
 <!-- Modal  section-->
